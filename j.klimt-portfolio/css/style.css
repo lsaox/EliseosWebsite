@@ -8,6 +8,31 @@
 @import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+
+@font-face {
+  font-family: 'Heaters'; 
+  src: url('../fonts/Heaters.otf')
+  
+}
+@font-face {
+  font-family: 'FreeLine.ttf'; 
+  src: url('../fonts/FreeLine.ttf')
+}
+@font-face {
+  font-family: 'Bamboo'; 
+  src: url('../fonts/Bamboo')
+}
+
+
+Resources
+
+
+
+body {
+  font-family: 'CustomFont' H,  sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+
+}
 html {
   width: 100%;
 }
@@ -20,16 +45,16 @@ sss * {
 }
 body {
   position: relative;
-  background: #343a5e;
-  color: #363535;
-  font: 300 18px/24px 'Open Sans', sans-serif;
-  min-width: 1400px;
+  background: #000000;
+  color: #cacacae5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  width : 1400px;
 }
 .ic {
   border:0;
   float:right;
-  background:#fff;
-  color:#f00;
+  background:#ffffff;
+  color:rgb(112, 5, 5);
   width:50%;
   line-height:10px;
   font-size:10px;
@@ -47,7 +72,15 @@ p {
   margin-bottom: 24px;
 }
 p.offset__1 {
+  background-color: black;
+  line-height: 2.5;
   margin-bottom: 31px;
+  margin-left: 412px;
+
+  font-size:22px
+  
+  
+  
 }
 input,
 textarea {
@@ -57,7 +90,16 @@ textarea {
 }
 img {
   max-width: 100%;
+
 }
+
+#headshot {
+ 
+  max-height: 30%;
+max-width: 30%;
+margin-bottom: 600px;
+margin-top: -675px;}
+
 /****Heads****/
 h1,
 h2,
@@ -65,10 +107,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
-  color: #287e7d;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-style: normal;
+ 
+  font-weight: 300;
+  font-size: 500px;
+  color: #e0dcdc;
+ font-size: larger;
+  font-family: 'Heaters'
+  
+  
 }
 h2 {
   text-align: center;
@@ -78,12 +124,12 @@ h2 {
   margin-bottom: 32px;
 }
 h2 span {
-  padding-top: 26px;
+  padding-top: 30px;
   display: block;
   font: 300 20px/24px 'Open Sans', sans-serif;
 }
 h3 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family:  sans-serif;
   font-weight: 300;
   font-size: 48px;
   line-height: 40px;
@@ -104,19 +150,19 @@ a {
   transition: 0.5s ease;
 }
 a:hover {
-  color: #287e7d;
+  color: #960707;
 }
 .btn {
   display: inline-block;
-  background-color: #343a5e;
-  color: #ffffff;
+  background-color: #000000;
+  color: #eee2e2;
   font: 30px/40px 'Yanone Kaffeesatz', sans-serif;
   padding: 9px 42px 12px;
   margin-top: 36px;
 }
 .btn:hover {
-  background-color: #287e7d;
-  color: #ffffff;
+  background-color: #800e0e;
+  color: #000000;
 }
 /****classes****/
 .mb0 {
@@ -175,11 +221,12 @@ a:hover {
 .fleft {
   float: left;
   margin-right: 30px;
-  border: 1px solid #b8b0b0;
+  border: 1px solid #000000;
   margin-top: 9px;
 }
 .pad-1 {
   padding-bottom: 98px;
+  background-color: #000000;
 }
 /*header*/
 .texture {
@@ -197,24 +244,35 @@ header .rel {
 header h1 {
   z-index: 999;
   float: left;
-  font: 300 60px/40px 'Open Sans Condensed', sans-serif;
+ 
+  font: 100 30px/40px 'Open Sans Condensed', sans-serif;
+  font-family: d
 }
 header h1 a {
+  margin-right: -200px ;
   display: block;
   -webkit-transition: 0s ease;
   transition: 0s ease;
-  color: #ffffff;
+  color: #e6d8d8;
+  font-size: 75px;
+  text-shadow: #660404;
+  font-family: 'Heaters';
+  
+  
+
 }
 .navigation {
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.59);
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.425);
+  font-family: 'FreeLine.ttf';
   position: fixed;
   z-index: 900;
   top: 0;
   left: 0;
-  padding: 57px 0 66px;
+  padding: 50px 0 66px;
   right: 0;
   text-align: center;
+
 }
 .navigation nav {
   float: right;
@@ -241,7 +299,7 @@ header h1 a {
   content: '';
   left: 0;
   right: 100%;
-  background-color: #ffffff;
+  background-color: #660404;
 }
 .navigation li a:hover,
 .navigation li a.current {
@@ -254,19 +312,19 @@ header h1 a {
 /****Content****/
 /****Non suppage set****/
 #portfolio {
-  background-color: #287e7d;
+  background-color: #000000;
   padding-bottom: 101px;
 }
 #portfolio h2 {
-  padding-top: 98px;
+  padding-top: 3px;
 }
 #testimonials {
-  background-color: #287e7d;
+  background-color: #741818;
   padding-bottom: 93px;
 }
 #skills {
   text-align: center;
-  background-color: #287e7d;
+  background-color: #020202;
   padding-bottom: 93px;
   background: url(../images/bg-1.jpg) center 0 no-repeat;
 }
@@ -302,7 +360,7 @@ header h1 a {
   margin-bottom: 28px;
 }
 .bq1 .text-2 a:hover {
-  color: #ffffff;
+  color: #700000;
 }
 #isotope {
   font-size: 0;
@@ -326,8 +384,8 @@ header h1 a {
 }
 #filters .btn.is-checked,
 #filters .btn:hover {
-  background-color: #ffffff;
-  color: #343a5e;
+  background-color: #131313;
+  color: #500f0f;
 }
 #filters .btn + .btn {
   margin-left: 6px;
@@ -336,7 +394,7 @@ header h1 a {
   padding-bottom: 41px;
   overflow: hidden;
   position: relative;
-  border-bottom: 1px solid #585858;
+  border-bottom: 1px solid #ffffff;
   padding-top: 20px;
 }
 .block-1 + .block-1 {
@@ -377,8 +435,8 @@ header h1 a {
 .circle > div {
   display: block !important;
   border-radius: 500px;
-  color: #ffffff;
-  background-color: #4082a5;
+  color: #cfbbbb;
+  background-color: #000000;
   margin: 0 auto;
 }
 .circle > div:before {
@@ -413,7 +471,7 @@ header h1 a {
   position: relative;
 }
 .gall-item img {
-  box-shadow: 0 0 0 #fff;
+  box-shadow: 0 0 0 #000000;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -438,7 +496,7 @@ header h1 a {
 /****Text styles****/
 .text-1 {
   font: 300 36px/40px 'Open Sans Condensed', sans-serif;
-  color: #287e7d;
+  color: #eceeee;
   margin-bottom: 16px;
 }
 .text-2 {
@@ -480,20 +538,20 @@ a.color1:hover {
   text-align: center;
 }
 .social-icons .fa {
-  color: #ffffff;
+  color: #000000;
   font-size: 25px;
   line-height: 52px;
   width: 50px;
   height: 50px;
   border-radius: 500px;
-  background-color: #287e7d;
+  background-color: #c3c1da;
   display: inline-block;
 }
 .social-icons .fa + .fa {
   margin-left: 17px;
 }
 .social-icons .fa:hover {
-  background-color: #343a5e;
+  background-color: #a70c0c;
 }
 /**Footer**/
 #footer {
@@ -502,13 +560,13 @@ a.color1:hover {
   line-height: 16px;
   font-weight: normal;
   text-align: center;
-  color: #ffffff;
+  color: #ac0d0d;
 }
 #footer a:hover {
   text-decoration: underline;
 }
 #toTop {
-  background-color: #656262;
+  background-color: #000000;
   background-color: rgba(101, 98, 98, 0.65);
   display: none;
   text-decoration: none;
@@ -533,3 +591,8 @@ a.color1:hover {
   outline: none;
   background-color: #000000;
 }
+body {  background-color: #000;}
+
+
+
+ {background-color: #000;}

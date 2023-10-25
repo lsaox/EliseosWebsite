@@ -273,8 +273,9 @@
 	left: 0;
 	top: 50%;
 	margin-top: 0px;
-	font: 300 48px/40px 'Open Sans Condensed', sans-serif;
-	color: #fff;
+	font: 300 50px/40px 'Bamboo', sans-serif;
+	text-shadow: 50%;
+	color: #d8b7b7;
 	right: 0;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -332,7 +333,7 @@
 }
 
 .camera_pag ul li span {
-	background-color: #fff;
+	background-color: #082440;
 	display: block;
 	width: 17px;
 	height: 17px;
@@ -345,7 +346,7 @@
 .camera_pag ul li:hover span, .camera_pag ul li.cameracurrent span {
 	cursor: pointer;
 	background-position: 0 0;
-	background-color: #287e7d;
+	background-color: #8f0202;
 }
 
 
