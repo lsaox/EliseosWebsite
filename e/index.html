@@ -57,8 +57,9 @@
 <script src="js/html5shiv.js"></script>
 <link rel="stylesheet" media="screen" href="css/ie.css">
 <![endif]-->
+
 </head>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+ 
 
 <body>
   
@@ -68,21 +69,59 @@
               header
 =================================-->
 <header id="home" class="page">
+  <div class="popup" id="popup">
+    <a href="#" id="closeBtn"></a>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+      <a href="https://github.com/lsaox" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a>
+      <a href="mailto:youremail@example.com"><img src="images/email-icon.png" alt="Email"></a>
+  </div>
+  </div>
   <div class="navigation single-page-nav">
     <div class="container_12">
       <div class="grid_12">
         <h1 class="logo">
-          <a href="index.html">Eliseo Rodriguez</a>
+          <a href="index.html" div id="myname" id="wrapper">
+  <div id="box">
+          Eliseo Rodriguez</a>
         
         </h1>
         <nav>
           <ul>
            <li><a href="#home" class="current">Home</a></li>
            <li><a href="#portfolio">Portfolio</a></li>
-           <li><a href="#skills">Skills</a></li>
+           <li><a href="#Skills" >Skills</a></li>
            <li><a href="#experience">Experience</a></li>
       
-           <li><a href="#contacts">Links</a></li>
+           <li> <a href="#" id="links" >Links</a> </li> 
+          
+              <!-- Popup container -->
+    
+  
+  
+  <script>
+   document.getElementById("links").addEventListener("click", function (event) {
+  event.preventDefault();
+  
+  var popup = document.getElementById("popup");
+
+  // Toggle the display of the popup
+  popup.style.display = (popup.style.display === "none") ? "block" : "none";
+});
+
+// Add event listener for the close button
+document.getElementById("closeBtn").addEventListener("click", function (e) {
+  e.preventDefault();
+  
+  var popup = document.getElementById("popup");
+  
+  // Close the popup
+  popup.style.display = "none";
+});
+</script>
+
+
+
          </ul>
         </nav>
       </div>
@@ -99,6 +138,7 @@
       <div class="caption fadeIn">Based in Dallas, Texas</div>
     </div>
   </div>
+
 </header>
 <!--=====================
           Content
@@ -115,11 +155,11 @@
 
           My academic journey is a stepping stone to becoming a recognized Full Stack Software Engineer, where I intend to use my knowledge to craft innovative and impactful solutions. I am currently based within the Dallas-Fort Worth area in the heart of Texas.  
           
-           One of my main aspirations is to ascend to the ranks of a senior developer, where I can guide and inspire others on their own journeys.
+         One of my main aspirations is to ascend to the ranks of a senior developer, where I can guide and inspire others on their own journeys.
           
-          Other than Coding, I love fitness, Chess, and I have a strong  passion for guitar playing .
+          Other than Coding, I love fitness, Chess, and I have a strong  passion for guitar playing.
           
-          As I move forward in my academic and professional journey, I am eager to face the challenges and opportunities that come my way, with a commitment to making a meaningful impact in the world of tech.
+           As I move forward in my academic and professional journey, I am eager to face the challenges and opportunities that come my way, with a commitment to making a meaningful impact in the world of tech.
         </p>
         <img id="headshot" src="images/page-img_1.jpg" alt="" class="fleft">
         <div class="extra_wrapper">
@@ -142,18 +182,18 @@
       <div id="filters" class="button-group">
         <a href="#" class="btn is-checked" data-filter="*">Show all</a>
         <a href="#" class="btn" data-filter=".ill">Websites</a>
-        <a href="#" class="btn" data-filter=".photo">API Usage/a>
+        <a href="#" class="btn" data-filter=".photo">API Usage</a>
         <a href="#" class="btn" data-filter=".design">Projects</a>
       </div>
       <div class="el gallery" id="isotope">
         <div class="element design">
           <div>
-            <a href="images/big1.jpg" class="gall-item"><img src="images/gal_img1.jpg" alt=""><span></span></a>
+            <a href="images/big1.jpg" class="gall-item"><img src="gal_img2.jpg" alt=""><span></span></a>
         </div>
         </div>
         <div class="element photo">
           <div>
-            <a href="images/big2.jpg" class="gall-item"><img src="images/gal_img2.jpg" alt=""><span></span></a>
+             <a  href="https://fractalicecream.github.io/DudeWheresMyBrew/"><img src="images/gal_img2.jpg"  alt=""><span></span></a>
           </div>
         </div>
         <div class="element  photo">
@@ -182,17 +222,17 @@
     <div class="clear"></div>
   </div>
 </section>
-<section id="skills" class="page">
+<section id="Skills" class="page">
   <div class="container_12">
     <div class="grid_12">
-      <h2>Skills</h2>
+      <h2 >Skills</h2>
     </div>
     <div class="grid_3">
      <div style="clear:both"></div>
         <div class="circle">
           <input class="knob" data-angleOffset="0" value="93" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
         </div>
-      <div class="text-3"><a href="#">Photoshop</a></div>
+      <div class="text-3"><a href="#">NODEJS</a></div>
     </div>
     <div class="grid_3">
       <div class="circle">
@@ -204,13 +244,13 @@
       <div class="circle">
           <input class="knob" data-angleOffset="0" value="90" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
         </div>
-      <div class="text-3"><a href="#">Photography</a></div>
+      <div class="text-3"><a href="#">CSS</a></div>
     </div>
     <div class="grid_3">
       <div class="circle">
           <input class="knob" data-angleOffset="0" value="89" data-fgColor="#2a797b" data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
         </div>
-      <div class="text-3"><a href="#">PHP/MYSQL</a></div>
+      <div class="text-3"><a href="#">JAVASCRIPT</a></div>
     </div>
     <div class="clear"></div>
   </div>
@@ -223,39 +263,43 @@
         <div class="grid_4 alpha">
           <div class="block-1__left">
             <h3>2023 - Present</h3>
-            <time  datetime="2014-01-01" class="text-2">Current work place</time>
+            <time  datetime="2014-01-01" class="text-2"></time>
             <div class="ta__right">
-              <div class="text-2 color1">Absolute Recomp Sales Associate</div>
+              <div class="text-2 color1"></div>
               
             </div>
           </div>
         </div>
         <div class="grid_8 omega">
           <div class="block-2__right">
-            <h3>Job Description</h3>
-            <div class="text-2">Graphic Designer</div>
-            <p>As an Absolute Recomp sales associate, I work in a fast paced enviroment that puts to test my sales ability as well as my ability to keep the gym clean and sanitary. Extensive knowledge of all the suppliments is important for my job in order to deliver the best customer experience and I am ready to answer any question . I also and coherent in the online ABCFinancial system that we use   </p>
-            Oliquam nibh ante, egestas id dictum a, commodo luctus libero. Praesent faucibus malesuadar faucibusonec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elitllam consectetur orci sed nulla facilisis consequaturabitur vel lorem sit
+            <h3>Absolute Recomp Sales Associate</h3>
+            <div class="text-2"></div>
+            <p>In my role as an Absolute Recomp sales associate, I thrive in a dynamic and fast paced environment that continually challenges my sales abilities while also emphasizing the importance of maintaining cleanliness and hygiene standards within our gym facility. Also my supplement knowledge is extensive and vital in aiding me to respond confidently to any customer inquiry.
+
+              Additionally, I am proficient in the utilization of the online ABCFinancial software, a vital component of our operations, for managing transactions, sales, and memberships. This proficiency allows me to navigate and leverage the software's capabilities to facilitate efficient and error-free transactions.
+              These skills and experiences not only contribute to my success as a sales associate but also reflect my ability to adapt, learn, and excel in technology-driven environments, which I believe would be an asset in a developer role.  </p>
+       
           </div>
         </div>
       </div>
       <div class="block-1">
         <div class="grid_4 alpha">
           <div class="block-1__left">
-            <h3>2007 - 2012</h3>
+            <h3>2020 - 2023</h3>
             <time  datetime="2014-01-01" class="text-2">April <span>August</span></time>
             <div class="ta__right">
-              <div class="text-2 color1">Freelancer</div>
-              Lorem ipsum dolor sit tetur dipiscing elit. In mollis erat mattis neque facilisis.
+              <div class="text-2 color1"></div>
             </div>
           </div>
         </div>
         <div class="grid_8 omega">
           <div class="block-2__right">
-            <h3>Job Description</h3>
-            <div class="text-2">Graphic Designer</div>
-            <p>Lorem ipsum dolor sit tetur dipiscing elit. In mollis erat mattis neque facilisis, situltries wertolio dasererat rutrum. Lorem ipsum dolor sit tetur dipiscing elit.  </p>
-            Aliquam nibh ante, egestas id dictum a, commodo luctus libero. Praesent faucibus malesuadar faucibusonec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elitllam consectetur orci sed nulla facilisis consequaturabitur vel lorem sit
+            <h3>Chess Teacher/Tutor</h3>
+            <div class="text-2"></div>
+            <p> 
+              In my role as a Chess teacher, I had the unique opportunity travel the United States while focusing on instructing in various chess camps. This experience was truly formative, as it honed my ability to think swiftly and adapt to different teaching environments, allowing me to optimize class delivery effectively.
+              
+              Teaching both group classes and offering one-on-one training was instrumental in solidifying my teaching skills. This combination improved my capacity to convey complex ideas in a digestible manner and improved my overall communication. These skills have seamlessly transitioned into the realm of software engineering, where clear communication and problem-solving are equally important.
           </div>
         </div>
       </div>
@@ -301,45 +345,7 @@
 <section id="contacts" class="page">
   <div class="container_12">
     <div class="grid_12">
-      <h2>Get in Touch</h2>
-    </div>
-    <div class="grid_6">
-      <form id="contact-form">
-          <div class="contact-form-loader"></div>
-          <fieldset>
-            <label class="name">
-              <input type="text" name="name" placeholder="Name*:" value="" data-constraints="@Required @JustLetters"  />
-              <span class="empty-message">*This field is required.</span>
-              <span class="error-message">*This is not a valid name.</span>
-            </label>
-            <label class="email">
-              <input type="text" name="email" placeholder="E-mail*:" value="" data-constraints="@Required @Email" />
-              <span class="empty-message">*This field is required.</span>
-              <span class="error-message">*This is not a valid email.</span>
-            </label>
-            <label class="phone">
-              <input type="text" name="phone" placeholder="Telephone:" value="" data-constraints="@Required @JustNumbers" />
-              <span class="empty-message">*This field is required.</span>
-              <span class="error-message">*This is not a valid phone.</span>
-            </label>
-            <label class="message">
-              <textarea name="message" placeholder="Message*:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-              <span class="empty-message">*This field is required.</span>
-              <span class="error-message">*The message is too short.</span>
-            </label>
-            <div>
-              <a href="#" class="btn" data-type="submit">submit </a>
-            </div>
-          </fieldset>
-          <div class="modal fade response-message">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title">Modal title</h4>
-                </div>
-                <div class="modal-body">
-                  Your message has been sent! I will be in touch soon.
+  .
                 </div>
               </div>
             </div>
@@ -349,7 +355,7 @@
       <div class="grid_6">
 
        
-        E-mail: <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+        <a href=></a>
       </div>
     <div class="clear"></div>
   </div>
@@ -398,132 +404,8 @@
       onComplete: function() {
           console.log('done scrolling');
       }
-  });
-</script>
-<script type="text/javascript">
-          google_api_map_init();
-          function google_api_map_init(){
-            var map;
-            var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068,14));
-            var styleArray = [
-    {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#193341"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#2c5a71"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#29768a"
-            },
-            {
-                "lightness": -37
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#406d80"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#406d80"
-            }
-        ]
-    },
-    {
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#3e606f"
-            },
-            {
-                "weight": 2
-            },
-            {
-                "gamma": 0.84
-            }
-        ]
-    },
-    {
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "weight": 0.6
-            },
-            {
-                "color": "#1a3541"
-            }
-        ]
-    },
-    {
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#2c5a71"
-            }
-        ]
-    }
-]
-            function initialize() {
-              var mapOptions = {
-                zoom: 13,
-                center: coordData,
-                scrollwheel: false,
-                styles: styleArray
-              }
-              var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-            google.maps.event.addDomListener(window, 'resize', function() {
-              map.setCenter(coordData);
-              var center = map.getCenter();
-            });
-          }
-            google.maps.event.addDomListener(window, "load", initialize);
-          }
+  }); free
+
       </script>
               <!--[if IE]><script type="text/javascript" src="js/excanvas.js"></script><![endif]-->
       <script src="js/jquery.knob.js"></script>
@@ -597,10 +479,14 @@
                                             }
                                         }
                                         v = this.cv;
+                                        
                                     }
                         });
     });
 </script>
+
+<script src="script.js"></script>
 <script src="js/isotop_ini.js"></script>
 </body>
+
 </html>

@@ -1,37 +1,4 @@
-// Copyright 2006 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//   http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
 
-
-// Known Issues:
-//
-// * Patterns are not implemented.
-// * Radial gradient are not implemented. The VML version of these look very
-//   different from the canvas one.
-// * Clipping paths are not implemented.
-// * Coordsize. The width and height attribute have higher priority than the
-//   width and height style values which isn't correct.
-// * Painting mode isn't implemented.
-// * Canvas width/height should is using content-box by default. IE in
-//   Quirks mode will draw the canvas using border-box. Either change your
-//   doctype to HTML5
-//   (http://www.whatwg.org/specs/web-apps/current-work/#the-doctype)
-//   or use Box Sizing Behavior from WebFX
-//   (http://webfx.eae.net/dhtml/boxsizing/boxsizing.html)
-// * Non uniform scaling does not correctly scale strokes.
-// * Optimize. There is always room for speed improvements.
-
-// Only add this code if we do not already have a canvas implementation
 if (!document.createElement('canvas').getContext) {
 
 (function() {
@@ -125,11 +92,7 @@ if (!document.createElement('canvas').getContext) {
       }
     },
 
-    /**
-     * Public initializes a canvas element so that it can be used as canvas
-     * element from now on. This is called automatically before the page is
-     * loaded but if you are creating elements using createElement you need to
-     * make sure this is called on the element.
+   
      * @param {HTMLElement} el The canvas element to initialize.
      * @return {HTMLElement} the element that was created.
      */
@@ -138,9 +101,7 @@ if (!document.createElement('canvas').getContext) {
 
         el.getContext = getContext;
 
-        // Remove fallback content. There is no way to hide text nodes so we
-        // just remove all childNodes. We could hide all elements and remove
-        // text nodes but who really cares about the fallback content.
+        
         el.innerHTML = '';
 
         // do not use inline function because that will leak memory
@@ -279,12 +240,7 @@ if (!document.createElement('canvas').getContext) {
     }
   }
 
-  /**
-   * This class implements CanvasRenderingContext2D interface as described by
-   * the WHATWG.
-   * @param {HTMLElement} surfaceElement The element that the 2D context should
-   * be associated with
-   */
+
   function CanvasRenderingContext2D_(surfaceElement) {
     this.m_ = createMatrixIdentity();
 

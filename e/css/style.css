@@ -19,8 +19,8 @@
   src: url('../fonts/FreeLine.ttf')
 }
 @font-face {
-  font-family: 'Bamboo'; 
-  src: url('../fonts/Bamboo')
+  font-family: 'Brightness.ttf'; 
+  src: url('../fonts/Brightness.ttf')
 }
 
 
@@ -43,12 +43,39 @@ a[href^="tel:"] {
 sss * {
   -webkit-text-size-adjust: none;
 }
+
+.popup {
+  display: none;
+  position: relative;
+  background-color: #080808;
+  border: 1px solid #700505;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Add a shadow with a glow effect */
+  padding: 10px;
+  right: 55px;
+  margin-right:1%;
+  margin-top: -15%;
+  top: 50px;
+  z-index: 1;
+}
+
+.popup  {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.popup img {
+  width: 50px;
+}
+
+
 body {
   position: relative;
+  font-size: 30px;
   background: #000000;
-  color: #cacacae5;
+  color: hsla(0, 38%, 84%, 0.898);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-  width : 1400px;
+
+  
 }
 .ic {
   border:0;
@@ -58,7 +85,7 @@ body {
   width:50%;
   line-height:10px;
   font-size:10px;
-  margin:-220% 0 0 0;
+  margin:-350% 0 0 0;
   overflow:hidden;
   padding:0
 }
@@ -77,7 +104,7 @@ p.offset__1 {
   margin-bottom: 31px;
   margin-left: 412px;
 
-  font-size:22px
+  font-size:25px
   
   
   
@@ -95,10 +122,11 @@ img {
 
 #headshot {
  
-  max-height: 30%;
+  max-height: 40%;
 max-width: 30%;
 margin-bottom: 600px;
-margin-top: -675px;}
+margin-top: -750px;}
+
 
 /****Heads****/
 h1,
@@ -109,20 +137,22 @@ h5,
 h6 {
  
   font-weight: 300;
-  font-size: 500px;
+  font-size: 75px;
   color: #e0dcdc;
- font-size: larger;
+ padding-left: 0px;
   font-family: 'Heaters'
   
   
 }
-h2 {
-  text-align: center;
-  font-size: 60px;
-  line-height: 40px;
-  padding-top: 99px;
-  margin-bottom: 32px;
+
+  h2 {
+    text-align: center;
+    font-size: 80px;
+    line-height: 40px;
+    padding-top: 50px;
+    margin-bottom: 41px;
 }
+
 h2 span {
   padding-top: 30px;
   display: block;
@@ -137,7 +167,8 @@ h3 {
 }
 /****Lists****/
 ul {
-  padding: 0;
+  
+  padding-right:74px;
   margin: 0;
   list-style: none;
 }
@@ -249,12 +280,12 @@ header h1 {
   font-family: d
 }
 header h1 a {
-  margin-right: -200px ;
+  margin-right: -250px ;
   display: block;
   -webkit-transition: 0s ease;
   transition: 0s ease;
   color: #e6d8d8;
-  font-size: 75px;
+  font-size: 68px;
   text-shadow: #660404;
   font-family: 'Heaters';
   
@@ -263,7 +294,7 @@ header h1 a {
 }
 .navigation {
   background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.425);
+  background-color: rgba(0, 0, 0, 0.027);
   font-family: 'FreeLine.ttf';
   position: fixed;
   z-index: 900;
@@ -313,30 +344,38 @@ header h1 a {
 /****Non suppage set****/
 #portfolio {
   background-color: #000000;
-  padding-bottom: 101px;
+  padding-bottom: 130px;
+  text-align: center;
+  font-size: 100px;
 }
 #portfolio h2 {
   padding-top: 3px;
+  font-size: 95%;
 }
 #testimonials {
-  background-color: #741818;
-  padding-bottom: 93px;
+  background-color: #000000;
+  padding-bottom: px;
+  font-size: 85%;
 }
 #skills {
   text-align: center;
   background-color: #020202;
   padding-bottom: 93px;
   background: url(../images/bg-1.jpg) center 0 no-repeat;
+  font-size: 600%;
 }
 #skills h2 {
-  color: #ffffff;
+  color: #000000;
   padding-top: 97px;
+  font-size: 75%;
 }
 #experience {
   padding-bottom: 97px;
+  background-color: #000;
 }
 #experience h2 {
   padding-top: 97px;
+  font-size: 350%;
 }
 #contacts {
   padding-bottom: 97px;
@@ -516,10 +555,10 @@ header h1 a {
 }
 .color1 a:hover,
 a.color1:hover {
-  color: #343a5e;
+  color: #d60c0c;
 }
 .color2 {
-  color: #343a5e;
+  color: #f8f1f1;
 }
 /****Map****/
 .google-map-api {
@@ -532,7 +571,7 @@ a.color1:hover {
   max-width: none !important;
 }
 .social-icons {
-  padding-top: 96px;
+  padding-top: 2px;
   font-size: 0;
   line-height: 0;
   text-align: center;
@@ -596,3 +635,29 @@ body {  background-color: #000;}
 
 
  {background-color: #000;}
+ 
+
+/* Styling for the links inside the popup */
+
+<style>
+    /* Add this style for the close button */
+    .closeBtn {
+      position: static;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      color: #00000041;
+      text-decoration: none;
+    }
+    .popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50% 
+  padding: 100px;
+  background: rgb(0 0 0 / 59%);
+  z-index: 1000;
+}
+
+
+

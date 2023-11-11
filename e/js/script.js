@@ -44,4 +44,27 @@ include('js/jquery.simplr.smoothscroll.js');
     }
   });
 
+ document.getElementById("links").addEventListener("click", function (event) {
+  event.preventDefault();
   
+  var popup = document.getElementById("popup");
+
+  // Toggle the display of the popup
+  popup.style.display = (popup.style.display === "none") ? "block" : "none";
+
+  // Toggle the class on the body to apply/remove the blur effect
+  document.body.classList.toggle("popup-blur");
+});
+
+// Add event listener for the close button
+document.getElementById("closeBtn").addEventListener("click", function (e) {
+  e.preventDefault();
+  
+  var popup = document.getElementById("popup");
+  
+  // Close the popup
+  popup.style.display = "none";
+
+  // Remove the class from the body to remove the blur effect
+  document.body.classList.remove("popup-blur");
+});

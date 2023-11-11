@@ -1,6 +1,6 @@
 // Camera slideshow v1.3.3 - a jQuery slideshow with many effects, transitions, easy to customize, using canvas and mobile ready, based on jQuery 1.4+
-// Copyright (c) 2012 by Manuel Masia - www.pixedelic.com
-// Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
+
+
 ;(function($){$.fn.camera = function(opts, callback) {
 	
 	var defaults = {
@@ -14,7 +14,7 @@
 		
 		barPosition			: 'bottom',	//'bottom', 'left', 'top', 'right'
 		
-		cols				: 6,
+		cols				: 1,
 		
 		easing				: 'easeInOutExpo',	//for the complete list http://jqueryui.com/demos/effect/easing.html
 		
@@ -69,11 +69,11 @@
 		
 		portrait			: false, //true, false. Select true if you don't want that your images are cropped
 		
-		rows				: 4,
+		rows				: 35,
 		
 		slicedCols			: 12,	//if 0 the same value of cols
 		
-		slicedRows			: 8,	//if 0 the same value of rows
+		slicedRows			: 20,	//if 0 the same value of rows
 		
 		slideOn				: 'random',	//next, prev, random: decide if the transition effect will be applied to the current (prev) or the next slide
 		
