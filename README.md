@@ -5,15 +5,7 @@ Overview
 Welcome to my personal website! This platform is designed to provide employers with a comprehensive overview of my skills, experiences, and projects. As a self-taught Full Stack Software Engineer and Certified through SMU as a Full Stack Developer,
 I am passionate about creating innovative solutions and delivering high-quality code. This README serves as a guide to help you navigate and understand the content presented on this site.
 
- Table of Contents
- About Me
- Skills
- Education
- Experience
- Projects
- Contact
-In this section, you'll find a brief introduction to who I am, my professional journey, and the values that drive my work.
-
+ 
 Skills
 Explore my proficiency in various technologies and programming languages, including:
 
