@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="css/touchTouch.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.Scss">
+  <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script src="js/isotope.pkgd.js"></script>
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/camera.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script>
+  
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('.gallery .gall_item').touchTouch();
+ });
+ $(document).ready(function(){
+     jQuery('#camera_wrap').camera({
+      loader: false,
+      pagination: true ,
+      minHeight: '500',
+      thumbnails: false,
+      height: '44.42708333333333%',
+      caption: true,
+      navigation: false,
+      fx: 'mosaic'
+    });
+    $('.gallery .gall-item').touchTouch();
+  });
+</script>
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+
+</head>
+ 
+
+<body>
+  
+  
+<div class="texture">
+<!--==============================
+              header
+=================================-->
+<header id="home" class="page">
+  <div class="popup" id="popup">
+    <a href="#" id="closeBtn"></a>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+      <a href="https://github.com/lsaox" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a>
+      <a href="mailto:youremail@example.com"><img src="images/email-icon.png" alt="Email"></a>
+  </div>
+  </div>
+  <div class="navigation single-page-nav">
+    <div class="container_12">
+      <div class="grid_12">
+        <h1 class="logo">
+          <a href="index.html" div id="myname" id="wrapper">
+  <div id="box">
+          Eliseo Rodriguez</a>
+        
+        </h1>
+        <nav>
+          <ul>
+           <li><a href="#home" class="current">Home</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#experience">Experience</a></li>
+      
+           <li> <a href="#" id="links" >Links</a> </li> 
+          
+              <!-- Popup container -->
+    
+  
+  
+  <script>
+   document.getElementById("links").addEventListener("click", function (event) {
+  event.preventDefault();
+  
+  var popup = document.getElementById("popup");
+
+  // Toggle the display of the popup
+  popup.style.display = (popup.style.display === "none") ? "block" : "none";
+});
+
+// Add event listener for the close button
+document.getElementById("closeBtn").addEventListener("click", function (e) {
+  e.preventDefault();
+  
+  var popup = document.getElementById("popup");
+  
+  // Close the popup
+  popup.style.display = "none";
+});
+</script>
+
+
+
+         </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div id="camera_wrap">
+    <div data-src="images/slide-1.jpg">
+      <div class="caption fadeIn"> </span> Coder  <span class="bull"></span> Fullstack Developer</div>
+    </div>
+    <div data-src="images/slide-2.jpg">
+      <div class="caption fadeIn"> SMU BootCamp </div>
+    </div>
+    <div data-src="images/slide-3.jpg">
+      <div class="caption fadeIn">Based in Dallas, Texas</div>
+    </div>
+  </div>
+
+</header>
+<!--=====================
+          Content
+======================-->
+<section class="content">
+  
+  <div class="pad-1">
+    <div class="container_12">
+      <div class="grid_12">
+        <h2>About Me
+          <span></span>
+        </h2>
+        <p class="offset__1">Hello! My name is Eliseo, I am a Software Engineering student at Southern Methodist University (SMU) where I am currently honing my skills in both Front and Back-end Web Development.
+
+          My academic journey is a stepping stone to becoming a recognized Full Stack Software Engineer, where I intend to use my knowledge to craft innovative and impactful solutions. I am currently based within the Dallas-Fort Worth area in the heart of Texas.  
+          
+         One of my main aspirations is to ascend to the ranks of a senior developer, where I can guide and inspire others on their own journeys.
+          
+          Other than Coding, I love fitness, Chess, and I have a strong  passion for guitar playing.
+          
+           As I move forward in my academic and professional journey, I am eager to face the challenges and opportunities that come my way, with a commitment to making a meaningful impact in the world of tech.
+        </p>
+        <img id="headshot" src="images/page-img_1.jpg" alt="" class="fleft">
+        <div class="extra_wrapper">
+          <div class="text-1">
+            
+          </div>
+          <div class="text-2 color1">
+       
+          </div>
+
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+<section id="portfolio" class="page">
+  <div class="container_12">
+    <div class="grid_12">
+      <h2 class="color2">My Portfolio</h2>
+      <div id="filters" class="button-group">
+        <a href="#" class="btn is-checked" data-filter="*">Show all</a>
+        <a href="#" class="btn" data-filter=".ill">Websites</a>
+        <a href="#" class="btn" data-filter=".photo">API Usage</a>
+        
+      </div>
+      <div class="el gallery" id="isotope">
+        <div class="element design">
+          <div>
+            <a href="images/big1.jpg" class="gall-item"><img src="gal_img2.jpg" alt=""><span></span></a>
+        </div>
+        </div>
+        <div class="element photo">
+          <div>
+             <a  href="https://fractalicecream.github.io/DudeWheresMyBrew/"><img src="images/gal_img2.jpg"  alt=""><span></span></a>
+          </div>
+        </div>
+        <div class="element  photo">
+          <div>
+            <a href="https://rzrkt.com/" ><img src="images/gal_img3.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="element ill">
+          <div>
+            <a href="images/big4.jpg" class="gall-item"><img src="images/gal_img4.jpg" alt=""><span></span></a>
+          </div>
+        </div>
+        <div class="element ill">
+          <div>
+            <a href="images/big5.jpg" class="gall-item"><img src="images/gal_img5.jpg" alt=""><span></span></a>
+          </div>
+        </div>
+        <div class="element design">
+          <div>
+            <a href="images/big6.jpg" class="gall-item"><img src="images/gal_img6.jpg" alt=""><span></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+
+    </div>
+    
+    
+     
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+<section id="experience" class="page">
+  <div class="container_12">
+    <div class="grid_12">
+      <h2>Work Experience</h2>
+      <div class="block-1">
+        <div class="grid_4 alpha">
+          <div class="block-1__left">
+            <h3>2023 - Present</h3>
+            <time  datetime="2014-01-01" class="text-2"></time>
+            <div class="ta__right">
+              <div class="text-2 color1"></div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="grid_8 omega">
+          <div class="block-2__right">
+            <h3>Absolute Recomp Sales Associate</h3>
+            <div class="text-2"></div>
+            <p>In my role as an Absolute Recomp sales associate, I thrive in a dynamic and fast paced environment that continually challenges my sales abilities while also emphasizing the importance of maintaining cleanliness and hygiene standards within our gym facility. Also my supplement knowledge is extensive and vital in aiding me to respond confidently to any customer inquiry.
+
+              Additionally, I am proficient in the utilization of the online ABCFinancial software, a vital component of our operations, for managing transactions, sales, and memberships. This proficiency allows me to navigate and leverage the software's capabilities to facilitate efficient and error-free transactions.
+              These skills and experiences not only contribute to my success as a sales associate but also reflect my ability to adapt, learn, and excel in technology-driven environments, which I believe would be an asset in a developer role.  </p>
+       
+          </div>
+        </div>
+      </div>
+      <div class="block-1">
+        <div class="grid_4 alpha">
+          <div class="block-1__left">
+            <h3>2020 - 2023</h3>
+            <time  datetime="2014-01-01" class="text-2">April <span>August</span></time>
+            <div class="ta__right">
+              <div class="text-2 color1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid_8 omega">
+          <div class="block-2__right">
+            <h3>Chess Teacher/Tutor</h3>
+            <div class="text-2"></div>
+            <p> 
+              In my role as a Chess teacher, I had the unique opportunity travel the United States while focusing on instructing in various chess camps. This experience was truly formative, as it honed my ability to think swiftly and adapt to different teaching environments, allowing me to optimize class delivery effectively.
+              
+              Teaching both group classes and offering one-on-one training was instrumental in solidifying my teaching skills. This combination improved my capacity to convey complex ideas in a digestible manner and improved my overall communication. These skills have seamlessly transitioned into the realm of software engineering, where clear communication and problem-solving are equally important.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+      </blockquote>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+<section id="contacts" class="page">
+  <div class="container_12">
+    <div class="grid_12">
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="grid_6">
+
+       
+        <a href=></a>
+      </div>
+    <div class="clear"></div>
+  </div>
+  
+  </div>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="social-icons">
+
+        <a href="https://www.linkedin.com/in/eliseo-rodriguez-330508291/" class="fa fa-linkedin" > </a>
+        <a href="https://github.com/lsaox" class="fa fa-github
+
+
+
+!--==============================
+              footer
+=================================
+
+
+ 
+      </div>
+  
+  <div class="clear"></div>
+</footer>
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script>
+  // Prevent console.log from generating errors in IE for the purposes of the demo
+  if ( ! window.console ) console = { log: function(){} };
+  // The actual plugin
+  $('.single-page-nav').singlePageNav({
+      offset: $('.single-page-nav').outerHeight(),
+      filter: ':not(.external)',
+      updateHash: true,
+      beforeStart: function() {
+          console.log('begin scrolling');
+      },
+      onComplete: function() {
+          console.log('done scrolling');
+      }
+  }); free
+
+      </script>
+              <!--[if IE]><script type="text/javascript" src="js/excanvas.js"></script><![endif]-->
+      <script src="js/jquery.knob.js"></script>
+
+
+<script src="script.js"></script>
+<script src="js/isotop_ini.js"></script>
+</body>
+
+</html>
