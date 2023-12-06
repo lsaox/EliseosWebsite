@@ -10,8 +10,8 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
 
 @font-face {
-  font-family: 'Heaters'; 
-  src: url('../fonts/Heaters.otf')
+  font-family: 'Augustus'; 
+  src: url('../fonts/AUGUSTUS.TTF')
   
 }
 @font-face {
@@ -72,7 +72,7 @@ body {
   position: relative;
   font-size: 30px;
   background: #000000;
-  color: hsla(0, 38%, 84%, 0.898);
+  color: hsla(0, 0%, 100%, 0.898);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
   
@@ -137,18 +137,17 @@ h5,
 h6 {
  
   font-weight: 300;
-  font-size: 75px;
+  font-size: 50px;
   color: #e0dcdc;
  padding-left: 0px;
-  font-family: 'Heaters'
+  font-family: 'AUGUSTUS.TTF'
   
   
 }
 
   h2 {
     text-align: center;
-    font-size: 80px;
-    line-height: 40px;
+    font-size: 50px;
     padding-top: 50px;
     margin-bottom: 41px;
 }
@@ -168,7 +167,7 @@ h3 {
 /****Lists****/
 ul {
   
-  padding-right:74px;
+  padding-right:50px;
   margin: 0;
   list-style: none;
 }
@@ -256,7 +255,7 @@ a:hover {
   margin-top: 9px;
 }
 .pad-1 {
-  padding-bottom: 98px;
+ 
   background-color: #000000;
 }
 /*header*/
@@ -285,9 +284,9 @@ header h1 a {
   -webkit-transition: 0s ease;
   transition: 0s ease;
   color: #e6d8d8;
-  font-size: 68px;
+  font-size: 50px;
   text-shadow: #660404;
-  font-family: 'Heaters';
+  font-family: 'AUGUSTUS.TTF';
   
   
 
@@ -326,7 +325,7 @@ header h1 a {
   position: absolute;
   height: 1px;
   top: 100%;
-  margin-top: 7px;
+  margin-top: 17px;
   content: '';
   left: 0;
   right: 100%;
@@ -375,7 +374,7 @@ header h1 a {
 }
 #experience h2 {
   padding-top: 97px;
-  font-size: 350%;
+  font-size: 275%;
 }
 #contacts {
   padding-bottom: 97px;
@@ -651,7 +650,7 @@ body {  background-color: #000;}
     }
     .popup {
   display: none;
-  position: absolute;
+  position:absolute;
   top: 50%;
   left: 50% 
   padding: 100px;
